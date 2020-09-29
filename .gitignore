@@ -1,0 +1,20 @@
+
+# node
+node_modules
+package-lock.json
+
+# JetBrains Tools
+.idea
+
+# VsCode
+.vscode
+
+# output
+lib
+packages/**/lib
+litexa/assets/html
+.deploy
+.test
+main.min.js
+
+artifacts.json
