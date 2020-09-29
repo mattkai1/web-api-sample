@@ -1,0 +1,10 @@
+{
+  "full-trace": true,
+  "recursive": true,
+  "require": [
+    "@babel/register",
+    "source-map-support/register"
+  ],
+  "watch-extensions": ["js"]
+}
+

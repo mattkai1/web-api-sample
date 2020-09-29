@@ -1,0 +1,22 @@
+# This is your skill code, written in Litexa, learn more here: https://litexa.com/get-started/litexa-code.html#main-litexa
+launch
+  if HTML.isHTMLPresent()
+    directive createHtmlStartDirective("index.html")
+    say "Launching the game that's going to win the Skills Challenge"
+    LISTEN events
+  else
+    say "Sorry, your device does not support the Alexa Web Api for Games."
+    -> goodbye
+
+  when AMAZON.StartOverIntent
+    -> launch
+
+  # There needs to be at least one intent with a sample utterance.
+  when placeHolderIntent
+    or "place Holder"
+    say "Replace this intent with something useful"
+
+goodbye
+  say "Bye now!"
+  END
+

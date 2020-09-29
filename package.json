@@ -1,0 +1,39 @@
+{
+  "name": "webapi-sample",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "npx rimraf node_modules litexa/main.js && npm install",
+    "compile": "npx webpack --config webpack.config.js",
+    "compile:watch": "npx webpack --config webpack.config.js --watch",
+    "deploy": "npm run compile && litexa deploy",
+    "lint": "npx eslint ./lib/**/*.js",
+    "test": "npx mocha './test/**/*.spec.js' && npm run test:litexa",
+    "test:file": "npx mocha",
+    "test:litexa": "npm run compile && litexa test",
+    "test:litexa:watch": "npm run compile:watch | litexa test -w",
+    "test:watch": "npx mocha './test/**/*.spec.js' --watch"
+  },
+  "author": "Amazon",
+  "devDependencies": {
+    "@babel/core": "7.8.3",
+    "@babel/preset-env": "7.8.3",
+    "@babel/register": "7.8.3",
+    "@litexa/deploy-aws": "^0.6.0",
+    "@litexa/html": "^0.6.0",
+    "babel-eslint": "10.0.3",
+    "babel-plugin-module-resolver": "4.0.0",
+    "chai": "4.2.0",
+    "eslint": "6.8.0",
+    "html-webpack-plugin": "^4.5.0",
+    "mocha": "7.0.0",
+    "sinon": "8.1.0",
+    "source-map-support": "0.5.16",
+    "webpack": "4.41.5",
+    "webpack-cli": "3.3.10"
+  },
+  "dependencies": {
+    "pino": "5.16.0",
+    "pino-pretty": "3.5.0"
+  },
+  "license": "ISC"
+}
