@@ -1,7 +1,9 @@
 # webapi-sample
 
-Use this repo to bootstrap a game using the Alexa Web API for Games and Litexa.
+Use this repo to bootstrap a game using the Alexa Web API for Games and Litexa.  
 
+For an example of these technologies at work, try [Chillout Checkers](https://chillaxedgames.com/).
+ 
 * Learn about the Alexa Web API for Games here: https://developer.amazon.com/en-US/docs/alexa/web-api-for-games/understand-alexa-web-api-for-games.html
 * The Alexa custom skill is built with Litexa.  Find more information on Litexa here: https://litexa.com/
 
